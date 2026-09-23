@@ -128,7 +128,7 @@ def main(args):
             loss.backward()
             optimizer.step()
             scheduler.step()
-            losses.append(loss.item())
+            losses.append(loss.item())  
 
             step += 1
             pbar.update(1)
